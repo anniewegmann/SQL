@@ -1,0 +1,14 @@
+/* What does the app's SQL look like? */
+CREATE TABLE users ( id INTEGER PRIMARY KEY, name TEXT, phone INTEGER, party TEXT);
+INSERT INTO users VALUES ("1", "Jenny Jacobs", "7138675309", "DEM");
+INSERT INTO users VALUES ("2", "Kenny Rodgers", "8325690663", "REP");
+INSERT INTO users VALUES ("3", "Megan Lemon", "5203639902", "IND");
+INSERT INTO users VALUES ("4", "Cisco Franco", "8556542201", "DEM");
+SELECT * FROM users;
+
+UPDATE users SET phone = "3162023343" where id = 4;
+SELECT * FROM users;
+
+DELETE FROM users WHERE id = 3;
+SELECT * FROM users;
+
